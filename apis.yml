@@ -1,7 +1,28 @@
 aid: geogrid
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/geogrid.png
 name: GeoGrid
-description: GeoGrid is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Geogrid Co., Ltd. is a South Korean smart-building water technology company behind BLOS
+  ("Building Oasis"), an integrated building-level water purification and monitoring system.
+  BLOS delivers drinkable water from every tap using chemical-free ionization to eliminate
+  rust, scale, and biofilm, and pairs it with real-time monitoring of water quality, usage,
+  carbon emissions, and consumption plus predictive analytics for pipe condition, contamination
+  risk, and filter replacement. Geogrid targets schools, hotels and resorts, public institutions,
+  and healthcare facilities, and offers a BLOS Care membership service. The company is based at
+  Seoul Startup Hub Seongsu, holds 21 registered patents, and has been recognized with venture
+  certification, ESG awards, and selection as a Korean representative for WSA 2026. This profile
+  was surfaced as a 500 Global portfolio lead and enriched from the company's public website.
 url: https://raw.githubusercontent.com/api-evangelist/geogrid/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Water Management
+- Water Purification
+- Smart Building
+- IoT
+- Water Quality Monitoring
+- ESG
+- Korea
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/geogrid-domain-security.yml
 - type: Website
-  url: https://egeogrid.com
+  url: https://www.egeogrid.com
+- type: About
+  url: https://www.egeogrid.com/company/about/
+- type: Support
+  url: https://www.egeogrid.com/support/contact/
+- type: Blog
+  url: https://www.egeogrid.com/media/press/
+- type: Newsletter
+  url: https://egeogrid.stibee.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
